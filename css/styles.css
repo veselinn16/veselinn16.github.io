@@ -650,7 +650,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .navigation__item {
   margin: 1rem; }
@@ -670,7 +671,7 @@ body {
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #55c57a;
-  transform: translateX(2rem); }
+  transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
@@ -686,12 +687,12 @@ body {
     width: 3rem;
     height: 2px;
     background-color: #333;
-    display: inline-block;
-    transition: all .2s; }
+    display: inline-block; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
-    left: 0; }
+    left: 0;
+    transition: all .2s; }
   .navigation__icon::before {
     top: .8rem; }
   .navigation__icon::after {
