@@ -28,13 +28,25 @@
     &__left {
         width: 33.333333%;
         display: table-cell;
+
+        @include respond(tab-port) {
+            width: 100%;
+            display: block;
+            height: 33.333%
+        }
     }
 
     &__right {
         width: 66.666667%;
         display: table-cell;
         vertical-align: middle;
-        padding: 3rem 5rem;        
+        padding: 3rem 5rem;
+        
+        @include respond(tab-port) {
+            width: 100%;
+            display: block;
+            height: 66.66%;            
+        }
     }
 
     &__img {
