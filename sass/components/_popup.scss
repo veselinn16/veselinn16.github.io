@@ -45,8 +45,9 @@
         @include respond(tab-port) {
             width: 100%;
             display: block;
-            height: 66.66%;            
-        }
+            height: 66.66%;
+            overflow: scroll;  
+            }
     }
 
     &__img {
