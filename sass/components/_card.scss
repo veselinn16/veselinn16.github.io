@@ -154,7 +154,8 @@
         font-weight: 100;
     }
 
-    @include respond(tab-port) {
+    // apply these style 1) if the device screen is smaller than 56.25em or when we're using a touch device
+       @media only screen and (max-width: 56.25em), only screen and (hover: none) {
         height: auto;
         border-radius: 3px;
         background-color: $color-white;
